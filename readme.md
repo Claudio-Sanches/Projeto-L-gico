@@ -31,4 +31,42 @@ Consultas SQL para recuperação de dados:
 - **VScode+Copilot**: Como facilitador da escrita das queryes.
 
 ---
-> by CBS construido no VScode com auxílio do chatGPT
+
+> by CBS construido no VScode com auxílio do Copilot
+
+---
+
+# Challenge - Logical Database Project (English Version)
+
+Based on the conceptual model developed for E-Commerce in a previous activity, I created the queries, having to rename entities and attributes due to the presence of the "space" character in their names, but preserved their integrity as much as possible.
+
+Description of the content of the developed queries:
+
+## criar_db.sql
+Main script for creating the `db_ecommerce` database and its tables:
+- Table structure for customers, individuals and companies, products, orders, suppliers, inventory, delivery, payment, third-party sellers, among others.
+- Definition of primary keys, unique indexes, and relationships.
+- Uses InnoDB engine and utf8mb4 charset.
+
+## popular_db.sql
+Sample data insertion script:
+- Populates tables for individuals, companies, customers, products, orders, suppliers, inventory, stock products, and product availability.
+- Sample data for testing and development.
+
+## recuperar_db.sql
+SQL queries for data retrieval:
+- Simple and filtered selections (products, individuals).
+- Calculation of total stock value by product and category.
+- Sorting and grouping.
+- Table joins to display orders with customer names (individual and company).
+- Examples using HAVING, AVG, SUM.
+- Answers to proposed questions.
+
+## Technologies Used
+- **MySQL**: Relational database used for modeling, creation, and data manipulation.
+- **MySQL Workbench**: Graphical tool for logical modeling, script generation, and database administration.
+- **SQL**: Language used for table creation, data insertion, and queries.
+- **VSCode + Copilot**: Facilitator for writing queries.
+
+---
+> by CBS built in VSCode with Copilot assistance
